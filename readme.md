@@ -31,7 +31,6 @@ The system operates on a two-tier model:
 * **Tier 2: Back-End Server (Persistence Layer)**
     * This is the internal server responsible for data persistence.
     * It listens on port **7001** and accessible by the Front-End server.
-    * It uses a **thread pool** to handle concurrent requests from the Front-End.
     * Each worker thread maintains its own connection to a **PostgreSQL** database.
     * It translates internal API calls (e.g., `/db_set`) into parameterized **SQL queries** (`INSERT`, `SELECT`, `DELETE`) to safely interact with the database.
 
