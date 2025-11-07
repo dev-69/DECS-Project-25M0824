@@ -2,10 +2,13 @@
 
 This project implements a two-tier key-value store system written in C++. It separates the application logic into a fast, in-memory caching layer (Front-End) and a persistent database layer (Back-End).
 
+
+GitHub Link : https://github.com/dev-69/DECS-Project-25M0824
+
 ## System Architecture
 
 
-![Alt text](sysarch.png "a title")
+![Alt text](SysArch.png "a title")
 
 
 The system operates on a two-tier model:
@@ -26,6 +29,9 @@ The system operates on a two-tier model:
     * It uses a **thread pool** to handle concurrent requests from the Front-End.
     * Each worker thread maintains its own connection to a **PostgreSQL** database.
     * It translates internal API calls (e.g., `/db_set`) into parameterized **SQL queries** (`INSERT`, `SELECT`, `DELETE`) to safely interact with the database.
+
+![Alt text](TimeDiagram.png "a title")
+
 
 
 ### Data Flow for GET Request
