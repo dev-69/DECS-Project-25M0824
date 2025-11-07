@@ -7,8 +7,8 @@ GitHub Link : https://github.com/dev-69/DECS-Project-25M0824
 
 Working :
 1. Open three different terminals.
-2. First in one terminal run ./backend then in another terminal run ./frontend .
-3. Run ./client in the third terminal. This will act as your client side.
+2. First in one terminal run `./backend` then in another terminal run `./frontend`.
+3. Run `./client` in the third terminal. This will act as your client side.
 
 ## System Architecture
 
